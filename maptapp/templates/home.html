@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% load staticfiles %}
+{% block styles %}
+ <link href="{% static 'css/map.css' %}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block js %}
+<script type="text/javascript" src="{% static 'js/map.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{api_key}}&callback=initMap"
+    async defer></script>
+<script type="text/javascript">window.map_options='{{bootstrap|safe}}'</script>
+{% endblock %}
+{% block content %}
+<div id="map" class="container-fluid"></div>
+<button type="button" class="btn btn-danger pull-right" id="reset-button">Reset</button>
+<div id="list" class="container-fluid"></div>
+{% endblock %}
