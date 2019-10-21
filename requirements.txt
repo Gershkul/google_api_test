@@ -1,6 +1,6 @@
 certifi==2017.7.27.1
 chardet==3.0.4
-Django==1.11.5
+Django==1.11.23
 google-api-python-client==1.6.3
 googlemaps==2.5.1
 httplib2==0.10.3
